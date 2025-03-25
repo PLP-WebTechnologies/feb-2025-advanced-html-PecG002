@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML5 Practice Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    table, th, td {
+      border: 1px solid #333;
+      border-collapse: collapse;
+      padding: 8px;
+    }
+    table {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+    form {
+      max-width: 600px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Ordered List with Roman Numerals -->
+  <section>
+    <h2>Roman Numerals List</h2>
+    <ol type="I">
+      <li>Introduction to HTML</li>
+      <li>Basic Tags</li>
+      <li>Forms</li>
+      <li>Tables</li>
+      <li>Multimedia Elements</li>
+    </ol>
+  </section>
+
+  <!-- External Image from Pexels -->
+  <section>
+    <h2>Featured Image</h2>
+    <img src="https://images.pexels.com/photos/3184287/pexels-photo-3184287.jpeg" 
+         alt="Office workspace" 
+         width="600">
+  </section>
+
+  <!-- Table with Contacts -->
+  <section>
+    <h2>Contact List</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Address</th>
+          <th>Mobile</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Jane Doe</td>
+          <td>Nairobi, Kenya</td>
+          <td>+254700123456</td>
+          <td>jane@example.com</td>
+        </tr>
+        <tr>
+          <td>John Smith</td>
+          <td>Mombasa, Kenya</td>
+          <td>+254711987654</td>
+          <td>john@example.com</td>
+        </tr>
+        <tr>
+          <td>Alice Kimani</td>
+          <td>Kisumu, Kenya</td>
+          <td>+254722456789</td>
+          <td>alice@example.com</td>
+        </tr>
+        <tr>
+          <td>Brian Otieno</td>
+          <td>Eldoret, Kenya</td>
+          <td>+254733789456</td>
+          <td>brian@example.com</td>
+        </tr>
+        <tr>
+          <td>Faith Wanjiku</td>
+          <td>Naivasha, Kenya</td>
+          <td>+254744321654</td>
+          <td>faith@example.com</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Registration Form -->
+  <section>
+    <h2>Registration Form</h2>
+    <form action="#" method="post">
+      <!-- Name -->
+      <label for="name">Full Name:</label><br>
+      <input type="text" id="name" name="name" placeholder="Enter your full name" required><br><br>
+
+      <!-- Email -->
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+      <!-- Password -->
+      <label for="password">Password:</label><br>
+      <input type="password" id="password" name="password" placeholder="Create a password" required minlength="6"><br><br>
+
+      <!-- Date -->
+      <label for="dob">Date of Birth:</label><br>
+      <input type="date" id="dob" name="dob" required><br><br>
+
+      <!-- Dropdown -->
+      <label for="country">Country:</label><br>
+      <select id="country" name="country" required>
+        <option value="">--Select your country--</option>
+        <option value="kenya">Kenya</option>
+        <option value="uganda">Uganda</option>
+        <option value="tanzania">Tanzania</option>
+      </select><br><br>
+
+      <!-- Radio Buttons -->
+      <p>Gender:</p>
+      <input type="radio" id="male" name="gender" value="male" required>
+      <label for="male">Male</label><br>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label><br>
+      <input type="radio" id="other" name="gender" value="other">
+      <label for="other">Other</label><br><br>
+
+      <!-- Checkboxes -->
+      <p>Select Interests:</p>
+      <input type="checkbox" id="coding" name="interests" value="coding">
+      <label for="coding">Coding</label><br>
+      <input type="checkbox" id="design" name="interests" value="design">
+      <label for="design">Design</label><br>
+      <input type="checkbox" id="writing" name="interests" value="writing">
+      <label for="writing">Writing</label><br><br>
+
+      <!-- Submit Button -->
+      <button type="submit">Register</button>
+    </form>
+  </section>
+
+</body>
+</html>
